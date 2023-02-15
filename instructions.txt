@@ -1,0 +1,17 @@
+Service:
+	Listens to the "topic" on Kafka Message queue and adds it to postgres.
+	
+PreProcessing:
+		Kafka gives->tsv->tab seperated values
+		parse it into json
+		write it into postgres
+		
+		Kafka-Postgres: JDBC Drivers
+
+		https://github.com/snowplow/snowplow-golang-analytics-sdk
+		bufio for tsv->json
+
+	Do it for active users graph.
+	Onlick event on starter flow.
+	For seven days on single flow.
+
