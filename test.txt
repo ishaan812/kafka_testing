@@ -8,3 +8,9 @@ docker exec --interactive --tty broker kafka-console-producer --bootstrap-server
 ReadMessage
 docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic quickstart --from-beginning
 
+<--snowplow--setup-->
+docker pull snowplow/iglu-server:0.9.0
+docker run --rm -v $PWD/config.hocon:/iglu/config.hocon snowplow/iglu-server:0.9.0 --config C:/kafka_testing/config/iglu-server.conf
+
+<snowplow-mini--setup>
+docker run -p 9090:9090 snowplow/snowplow-micro:1.5.0

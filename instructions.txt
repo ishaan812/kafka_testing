@@ -15,3 +15,11 @@ PreProcessing:
 	Onlick event on starter flow.
 	For seven days on single flow.
 
+-->Copy RFC Table------------------------------------------------>Done
+-->Index Date---------------------------------------------------->Done
+-->Raman-> TSV Format
+-->Mock Data for Funnel analytics
+-->Create Materialized viewed count------> SQL QUERY 
+-->Create Materialized opened count------> SQL QUERY
+-->Create a controller to send query parameter to run a query 
+
