@@ -1,6 +1,6 @@
 
 CreateTopicForKafka
-docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic quickstart
+docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic test
 
 Write To Topic
 docker exec --interactive --tty broker kafka-console-producer --bootstrap-server broker:9092 --topic quickstart
